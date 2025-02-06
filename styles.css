@@ -1,72 +1,105 @@
-/*  your css code here. If applicable */
+/* Global Styles */
+
 body {
-    background-color: #cccccc;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #cccccc;
+    color: #333;
 }
 
 
-/* Container Styles */
+/* Container Styling */
 
 .container {
-    max-width: 800px;
-    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    background: #fff;
+    gap: 30px;
+}
+
+
+/* Playlist Section */
+
+.playlist {
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-
-/* Headings Styling */
-
-h1,
-h2 {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     text-align: center;
+    width: 100%;
+    max-width: 400px;
 }
 
-
-/* Playlist Styling */
+.playlist h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
 
 .playlist ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .playlist li {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
-.playlist a {
-    text-decoration-line: none;
-    color: #007BFF;
-    transition: color 0.2s;
+.playlist li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
 }
 
-.playlist a:hover {
+.playlist li a:hover {
     color: #0056b3;
 }
 
 
-/* Video and Audio Players */
+/* Now Playing Section */
 
-.player_one,
-.player_two {
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
+.now-playing {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.now-playing h2 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.video-container video {
+    width: 100%;
+    max-height: 300px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-video,
-audio {
-    width: 100%;
-    border-radius: 10px;
+
+/* Audio Player */
+
+.audio-player {
+    margin-top: 20px;
 }
 
-.audio-player p {
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 5px;
+.audio-player audio {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.song-title {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+ul {
+    border: 2px solid black;
+    border-radius: 10px;
 }
