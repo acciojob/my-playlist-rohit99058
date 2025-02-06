@@ -1,85 +1,72 @@
 /*  your css code here. If applicable */
 body {
     background-color: rgb(204, 204, 204);
-    /* Light gray background - CORRECTED */
-    font-family: sans-serif;
-    margin: 20px;
-    /* Add some margin to the body */
-}
-
-.container {
-    display: flex;
-    /* Use flexbox for layout */
-    gap: 20px;
-    /* Space between playlist and now playing */
-}
-
-.playlist {
-    width: 200px;
-    /* Fixed width for playlist */
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-.playlist h2 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.playlist ul {
-    list-style: none;
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
 }
 
-.playlist li a {
-    display: block;
-    /* Make list items fill the width */
-    padding: 5px;
-    text-decoration: none;
-    color: #333;
+
+/* Container Styles */
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.now-playing {
-    flex: 1;
-    /* Allow now playing to take up remaining space */
-    border: 1px solid #ccc;
-    padding: 10px;
-}
 
-.now-playing h2 {
+/* Headings Styling */
+
+h1,
+h2 {
     text-align: center;
-    margin-bottom: 10px;
-}
-
-.video-container {
-    position: relative;
-    /* For positioning video controls */
-}
-
-.now-playing video {
-    width: 100%;
-    display: block;
-    /* Prevent video from overflowing container */
-}
-
-.audio-player {
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-.audio-player audio {
-    width: 100%;
 }
 
 
-/* Styles from the table */
+/* Playlist Styling */
+
+.playlist ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.playlist li {
+    margin: 5px 0;
+}
+
+.playlist a {
+    text-decoration-line: none;
+    color: #007BFF;
+    transition: color 0.2s;
+}
+
+.playlist a:hover {
+    color: #0056b3;
+}
+
+
+/* Video and Audio Players */
 
 .player_one,
 .player_two {
     background-color: rgb(255, 255, 255);
     padding: 10px;
-    /* You can adjust padding as needed */
-    border-radius: 5px;
-    /* You can adjust border-radius as needed */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+video,
+audio {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.audio-player p {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 5px;
 }
